@@ -1,0 +1,176 @@
+// Font-Family
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+// Alle elementene *
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+// App component class
+.App__ {
+    height: 100vh;
+    background: #d3d2d3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    // App component button
+    .App__Button {
+        background: #26303A;
+        border: 0px;
+        color: #fff;
+        margin-top: 25px;
+        padding: 15px 30px;
+        cursor: pointer;
+        font-size: 20px;
+        border: 2px solid #d3d2d3;
+        border-radius: 50px;
+        font-weight: 500;
+        transition: 350ms ease;
+    }
+
+    // App component button:hover
+    .App__Button:hover {
+        background: #ffff;
+        color: #26303A;
+        border-radius: 5px;
+        border: 2px solid #26303A;
+    }
+
+    // Hide and checklist button
+    .App__HideAndChecklist {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        padding: 5px 20px;
+
+        // p
+        p {
+            transition: 350ms ease;
+            cursor: pointer;
+        }
+    }
+
+    // Hide and checklist:hover
+    .App__HideAndChecklist {
+        p:first-child:hover {
+            font-size: 20px;
+        }
+
+        p:last-child:hover {
+            font-size: 20px;
+        }
+    }
+
+    // App component button:focus
+
+    .App__Button:focus {
+        outline: none;
+    }
+
+    // Welcome div
+    .App__Welcomescreen {
+        background: #26303A;
+        transform: scale(0);
+        transition: 350ms ease;
+        text-align: center;
+        position: relative;
+
+        // FindCandidates button
+        .App__FindCandidatesButton {
+            background: #26A859;
+            border: 0px;
+            color: white;
+            padding: 10px 40px;
+            cursor: pointer;
+            border: 2px solid #26303A;
+            margin-top: 50px;
+            transition: 350ms ease;
+        }
+
+        // FindCandidates button hover
+        .App__FindCandidatesButton:hover {
+            border-radius: 50px;
+            border: 2px solid white;
+        }
+
+        // FindCandidates button:focus
+        .App__FindCandidatesButton:focus {
+            outline: none;
+        }
+
+
+        // h1
+        h1 {
+            color: white;
+        }
+
+        // p 
+        p {
+            color: white;
+            font-size: 15px;
+            font-weight: lighter;
+        }
+    }
+
+    // Active class welcome screen
+    .App__Welcomescreen.active {
+        transform: scale(1);
+    }
+
+    // App Discover NextCoWorker Section
+    .App__DiscoverNextCoWorkerSection {
+        padding: 10px;
+    }
+
+    // App loadingBar 
+    .App__LoadingBar {
+        width: 100%;
+        text-align: left;
+        background: #FFFFFF;
+        position: relative;
+
+        
+
+        // First key logo
+        .KeyFirst__ {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 30px;
+        }
+
+        .KeyThird__ {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 30px;
+        }
+
+        // Second key logo
+        .KeySecond__ {
+            position: absolute;
+            left: 50%;
+            bottom: -15px;
+            width: 30px;
+        }
+
+        // Perecntage span
+
+        .App__Perecentage_Span {
+            background: #34C5C5;
+            height: 100%;
+            text-align: right !important;
+            padding: 10px 0px;
+
+            span {
+                font-weight: 800;
+                color: #26303A;
+            }
+
+        }
+    }
+}
