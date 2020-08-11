@@ -70,7 +70,12 @@ const App = () => {
                 </p>
               </div>
               <button className="App__FindCandidatesButton">
-                FIND CANDIDATES
+                <a
+                  href="https://wa.works/"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                  FIND CANDIDATES
+                </a>
               </button>
             </div>
           </div>
@@ -90,7 +95,7 @@ const App = () => {
                     checked={checked}
                     onChange={() => checkBoxValue()}
                   />
-                  <label for="checkbox2">
+                  <label htmlFor="checkbox2">
                     <span>Upload logo</span>
                   </label>
                 </div>
@@ -103,7 +108,7 @@ const App = () => {
                     checked={checkedSecond}
                     onChange={() => checkBoxSecond()}
                   />
-                  <label for="checkbox3">
+                  <label htmlFor="checkbox3">
                     <span>Add description</span>
                   </label>
                 </div>
@@ -115,7 +120,7 @@ const App = () => {
                     checked={checkedThird}
                     onChange={() => checkBoxThird()}
                   />
-                  <label for="checkbox4">
+                  <label htmlFor="checkbox4">
                     <span>Upgrade</span>
                   </label>
                 </div>
@@ -220,7 +225,14 @@ const App = () => {
                   Pokes are candidate's way of showing <br />
                   interest in your workplace
                 </p>
-                <button>FIND CANDIDATES</button>
+                <button>
+                  <a
+                    href="https://wa.works/"
+                    style={{ textDecoration: "none", color: "white" }}
+                  >
+                    FIND CANDIDATES
+                  </a>
+                </button>
               </div>
             </div>
           </div>
