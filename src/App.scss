@@ -8,6 +8,8 @@
     font-family: "Roboto", sans-serif;
 }
 
+
+
 // App component class
 .App__ {
     height: 100vh;
@@ -16,6 +18,286 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    // Lables div 
+    .App__Labels {
+
+        // First checkbox should be relative
+        .checkbox {
+            position: relative;
+        }
+
+        // Checkbox input
+        .checkbox input[type="checkbox"] {
+            width: auto;
+            opacity: 0.00000001;
+            position: absolute;
+            left: 0;
+            margin-left: -20px;
+        }
+
+        // Checkbox label (relative)
+        .checkbox label {
+            position: relative;
+        }
+
+        // Checkbox label before
+        .checkbox label:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin: 4px;
+            width: 22px;
+            height: 22px;
+            transition: transform 0.28s ease;
+            border-radius: 3px;
+            border: 2px solid #7bbe72;
+        }
+
+        // Checkbox label after
+        .checkbox label:after {
+            content: '';
+            display: block;
+            width: 10px;
+            height: 5px;
+            border-bottom: 2px solid #7bbe72;
+            border-left: 2px solid #7bbe72;
+            -webkit-transform: rotate(-45deg) scale(0);
+            transform: rotate(-45deg) scale(0);
+            transition: transform ease 0.25s;
+            will-change: transform;
+            position: absolute;
+            top: 12px;
+            left: 10px;
+        }
+
+        // Checkbox input when checked before
+        .checkbox input[type="checkbox"]:checked~label::before {
+            color: #7bbe72;
+        }
+
+        // Checkbox input when checked after
+        .checkbox input[type="checkbox"]:checked~label::after {
+            -webkit-transform: rotate(-45deg) scale(1);
+            transform: rotate(-45deg) scale(1);
+        }
+
+        // Checkbox label
+        .checkbox label {
+            margin-bottom: 0px;
+            display: block;
+            padding-bottom: 20px;
+            padding-left: 40px;
+            font-weight: normal;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        // Checkbox label span
+        .checkbox label span {
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        // Checkbox input checkbox: focus + label :: before
+        .checkbox input[type="checkbox"]:focus+label::before {
+            outline: 0;
+        }
+
+
+        // Second checkbox 
+        .checkboxSecond {
+            position: relative;
+        }
+
+        // Checkbox second input checkbox
+        .checkboxSecond input[type="checkbox"] {
+            width: auto;
+            opacity: 0.00000001;
+            position: absolute;
+            left: 0;
+            margin-left: -20px;
+        }
+
+        // Checkbox second label
+        .checkboxSecond label {
+            position: relative;
+        }
+
+        // CheckboxSecond label :: before
+        .checkboxSecond label:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin: 4px;
+            width: 22px;
+            height: 22px;
+            transition: transform 0.28s ease;
+            border-radius: 3px;
+            border: 2px solid #7bbe72;
+        }
+
+        // CheckboxSecond label :: after
+        .checkboxSecond label:after {
+            content: '';
+            display: block;
+            width: 10px;
+            height: 5px;
+            border-bottom: 2px solid #7bbe72;
+            border-left: 2px solid #7bbe72;
+            -webkit-transform: rotate(-45deg) scale(0);
+            transform: rotate(-45deg) scale(0);
+            transition: transform ease 0.25s;
+            will-change: transform;
+            position: absolute;
+            top: 12px;
+            left: 10px;
+        }
+
+        // Checkbox second input checkbox checked and label :: Before
+        .checkboxSecond input[type="checkbox"]:checked~label::before {
+            color: #7bbe72;
+        }
+
+        // Checkbox second input checkbox checked and label :: After
+        .checkboxSecond input[type="checkbox"]:checked~label::after {
+            -webkit-transform: rotate(-45deg) scale(1);
+            transform: rotate(-45deg) scale(1);
+        }
+
+        // Checkboxsecond label
+        .checkboxSecond label {
+            margin-bottom: 0px;
+            display: block;
+            padding-bottom: 20px;
+            padding-left: 40px;
+            font-weight: normal;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        // CheckboxSecond lable + span
+        .checkboxSecond label span {
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        // Checkbox input checkbox focused + lable::before
+        .checkboxSecond input[type="checkbox"]:focus+label::before {
+            outline: 0;
+        }
+
+        // Checkbox third
+        .checkboxThird {
+            position: relative;
+        }
+
+        // Checkbox third input checkbox
+        .checkboxThird input[type="checkbox"] {
+            width: auto;
+            opacity: 0.00000001;
+            position: absolute;
+            left: 0;
+            margin-left: -20px;
+        }
+
+        // Checkboxthird label
+        .checkboxThird label {
+            position: relative;
+        }
+
+        // CheckboxThird label::before
+        .checkboxThird label:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin: 4px;
+            width: 22px;
+            height: 22px;
+            transition: transform 0.28s ease;
+            border-radius: 3px;
+            border: 2px solid #7bbe72;
+        }
+
+        // CheckboxThird label::after
+        .checkboxThird label:after {
+            content: '';
+            display: block;
+            width: 10px;
+            height: 5px;
+            border-bottom: 2px solid #7bbe72;
+            border-left: 2px solid #7bbe72;
+            -webkit-transform: rotate(-45deg) scale(0);
+            transform: rotate(-45deg) scale(0);
+            transition: transform ease 0.25s;
+            will-change: transform;
+            position: absolute;
+            top: 12px;
+            left: 10px;
+        }
+
+        // CheckboxThird checekd checkbox and label::before
+        .checkboxThird input[type="checkbox"]:checked~label::before {
+            color: #7bbe72;
+        }
+
+        // CheckboxThird checekd checkbox and label::after
+        .checkboxThird input[type="checkbox"]:checked~label::after {
+            -webkit-transform: rotate(-45deg) scale(1);
+            transform: rotate(-45deg) scale(1);
+        }
+
+        // Checkboxthird label
+        .checkboxThird label {
+            margin-bottom: 0px;
+            display: block;
+            padding-bottom: 20px;
+            padding-left: 40px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-weight: normal;
+            cursor: pointer;
+        }
+
+        // CheckboxThird + label + span
+        .checkboxThird label span {
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        // Checkbox input checkbox focused + lable::Before
+        .checkboxThird input[type="checkbox"]:focus+label::before {
+            outline: 0;
+        }
+
+        // Input field
+        .CheckBox__Second {
+            height: 25px;
+            width: 25px;
+            background-color: #eee;
+            border-radius: 50%;
+        }
+
+        // Lables
+        label {
+            padding: 10px 0px;
+            color: white;
+
+        }
+    }
+
+
 
     // App component button
     .App__Button {
@@ -121,9 +403,16 @@
         transform: scale(1);
     }
 
+    // Div labels 
+    .App__Labels {
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+    }
+
     // App Discover NextCoWorker Section
     .App__DiscoverNextCoWorkerSection {
-        padding: 10px;
+        padding: 40px;
     }
 
     // App loadingBar 
@@ -133,36 +422,43 @@
         background: #FFFFFF;
         position: relative;
 
-        
+
 
         // First key logo
         .KeyFirst__ {
             position: absolute;
             right: 0;
-            bottom: 0;
-            width: 30px;
+            bottom: -30px;
+            width: 23px;
         }
 
+        // Third key logo
         .KeyThird__ {
             position: absolute;
             left: 0;
-            bottom: 0;
-            width: 30px;
+            bottom: -30px;
+            width: 23px;
         }
 
         // Second key logo
         .KeySecond__ {
             position: absolute;
-            left: 50%;
-            bottom: -15px;
-            width: 30px;
+            left: 40%;
+            bottom: -30px;
+            width: 23px;
+            transform: translate(-40%);
         }
+
+
+
+
 
         // Perecntage span
 
         .App__Perecentage_Span {
             background: #34C5C5;
             height: 100%;
+            margin-bottom: 50px;
             text-align: right !important;
             padding: 10px 0px;
 
@@ -170,6 +466,94 @@
                 font-weight: 800;
                 color: #26303A;
             }
+
+        }
+    }
+
+    // Chain icons div section
+    .App__CloseIcons {
+        position: relative;
+        display: flex;
+
+        // img
+        img {
+            width: 30px;
+            cursor: pointer;
+        }
+
+
+        // First close icon
+
+        .App__CloseIconsText {
+            display: flex;
+            text-align: left;
+            font-weight: 700;
+
+            // p
+            p {
+                padding-left: 10px;
+                color: #2F9497;
+            }
+        }
+    }
+
+    // Chain success div 
+    .App__SuccessMessageChain {
+
+        // Image and text div chain
+        .App_chainImageAndText {
+            padding: 30px;
+        }
+
+        // Chain nav
+        .App__ChainNav {
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+
+
+
+            p {
+                font-weight: 300;
+                transition: 350ms ease;
+                cursor: pointer;
+            }
+
+            p:first-child:hover {
+                font-size: 20px;
+            }
+
+            p:last-child:hover {
+                font-size: 20px;
+            }
+        }
+
+        // Chain text
+
+        .App_ChainText {
+            margin-top: 20px;
+            color: white;
+
+            // Button
+            button {
+                background: #26A859;
+                border: 0px;
+                color: white;
+                padding: 10px 40px;
+                cursor: pointer;
+                border: 2px solid #26303A;
+                margin-top: 50px;
+                transition: 350ms ease;
+            }
+
+            button // p
+
+            p {
+                font-weight: 300;
+                margin-top: 10px;
+                font-size: 17px;
+            }
+
 
         }
     }
